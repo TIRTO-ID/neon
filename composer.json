@@ -1,0 +1,28 @@
+{
+    "name": "liulinnuha/neon",
+    "description": "Neon Login Authenticator",
+    "type": "library",
+    "require": {
+        "php": "^8.1"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Liulinnuha\\Neon\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ulin Nuha",
+            "email": "ulin@tirto.id"
+        }
+    ],
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Liulinnuha\\Neon\\NeonServiceProvider"
+            ]
+        }
+    }
+}
