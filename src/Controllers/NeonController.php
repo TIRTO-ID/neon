@@ -20,7 +20,7 @@ class NeonController extends Controller
      */
     public function Login(Request $request)
     {
-        if(session()->get('sess')) return route('home');
+        if(session()->get('sess')) return redirect(config('app.url'));
 
         if(!$session = $request->get('sess')){
             return route('google-login');
