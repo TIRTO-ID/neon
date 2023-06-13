@@ -12,7 +12,7 @@ class NeonAuth
     public function handle(Request $request, Closure $next)
     {
 
-        if(!session()->get('neon_data')) return abort(403);
+        if(!session()->get('neon_data')) return redirect()->route('login')->with('error', 'Please Login ');
 
         return $next($request);
     }
