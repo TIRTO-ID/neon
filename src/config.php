@@ -12,7 +12,7 @@ return [
 	],
 	'client_id' => env('NEON_CLIENT_ID', 6538), //indium live (devel 8884)
 	//default role for new registered user
-    // 'default_role' => 'admin',
+    'default_role' => 'admin',
 
     
     'users' => [

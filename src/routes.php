@@ -8,7 +8,8 @@ Route::prefix('neon')->middleware(['web'])->group(function(){
     // Route::get('callback', [NeonController::class, 'login'])->name('callback');
     Route::get('login', function() {
 
-        if(auth()->check()) return redirect(config('app.url'));
+        if(session()->get('neon_data')) return redirect(config('app.url'));
+        // if(auth()->check()) return redirect(config('app.url'));
 
         $url = strtr(
             config('neon.url.login'),
