@@ -5,10 +5,10 @@ use Illuminate\Support\Facades\Route;
 use Liulinnuha\Neon\Controllers\NeonController;
 
 Route::prefix('neon')->middleware(['web'])->group(function(){
-    Route::get('callback', [NeonController::class, 'login'])->name('callback');    
+    // Route::get('callback', [NeonController::class, 'login'])->name('callback');
     Route::get('login', function() {
 
-        if(auth()->check()) return redirect(route('home'));
+        if(auth()->check()) return redirect(config('app.url'));
 
         $url = strtr(
             config('neon.url.login'),
