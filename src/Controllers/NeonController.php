@@ -20,7 +20,6 @@ class NeonController extends Controller
      */
     public function Login(Request $request)
     {
-        if(session()->get('sess')) return redirect(config('app.url'));
 
         if(!$session = $request->get('sess')){
             return route('google-login');
@@ -44,8 +43,12 @@ class NeonController extends Controller
             return redirect(route('google-login'))->with('error', 'Unauthorized: User tidak ditemukan');
 
         $data = $resp->json()['data'];
+
+        return $data;
         
-        if(!$userExist = User::where('email', $data['email'])->first()){
+        /* 
+        $user = config('neon.users.model');
+        if(!$userExist = (new $user)->where('email', $data['email'])->first()){
             return redirect(config('neon_url'));
 
 
@@ -55,7 +58,7 @@ class NeonController extends Controller
                 'email' => $data['email'],
                 'name' => $data['username'],
                 'password' => Hash::make('password'),
-                // 'role_id' => self::role()->id,
+                'role_id' => self::role()->id,
             ]);
 
             $id = $user->id;
@@ -67,6 +70,7 @@ class NeonController extends Controller
         $request->session()->put('sess', $session);
 
         return redirect(config('app.url'));
+        */
     }
 
     public function Logout(Request $request)
