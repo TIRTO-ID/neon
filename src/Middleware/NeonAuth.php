@@ -12,7 +12,7 @@ class NeonAuth
     public function handle(Request $request, Closure $next)
     {
 
-        if(!Auth::check()) return abort(403);
+        if(!session()->get('neon_data')) return abort(403);
 
         return $next($request);
     }
