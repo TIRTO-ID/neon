@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-use Liulinnuha\Neon\Controllers\NeonController;
+use Tirtoid\Neon\Controllers\NeonController;
 
 Route::prefix('neon')->middleware(['web'])->group(function(){
     // Route::get('callback', [NeonController::class, 'login'])->name('callback');
