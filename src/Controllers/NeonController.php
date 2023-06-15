@@ -1,5 +1,5 @@
 <?php
-namespace Liulinnuha\Neon\Controllers;
+namespace Tirtoid\Neon\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;

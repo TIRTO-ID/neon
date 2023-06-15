@@ -1,5 +1,5 @@
 {
-    "name": "liulinnuha/neon",
+    "name": "tirtoid/neon",
     "description": "Neon Login Authenticator",
     "type": "library",
     "require": {
@@ -8,7 +8,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Liulinnuha\\Neon\\": "src/"
+            "Tirtoid\\Neon\\": "src/"
         }
     },
     "authors": [
@@ -21,7 +21,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Liulinnuha\\Neon\\NeonServiceProvider"
+                "Tirtoid\\Neon\\NeonServiceProvider"
             ]
         }
     }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Liulinnuha\Neon\Middleware;
+namespace Tirtoid\Neon\Middleware;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;

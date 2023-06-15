@@ -1,10 +1,10 @@
 <?php 
 
-namespace Liulinnuha\Neon;
+namespace Tirtoid\Neon;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Routing\Router;
-use Liulinnuha\Neon\Middleware\NeonAuth;
+use Tirtoid\Neon\Middleware\NeonAuth;
 
 class NeonServiceProvider extends ServiceProvider
 {
