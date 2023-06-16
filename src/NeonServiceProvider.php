@@ -28,7 +28,7 @@ class NeonServiceProvider extends ServiceProvider
     {
         $configPath = $this->app['path.config'] . DIRECTORY_SEPARATOR . 'neon.php';
         $this->publishes([__DIR__ . '/config.php' => $configPath]);
-        $this->publishes([__DIR__. '/views' => base_path('resource/views/neon')]);
+        $this->publishes([__DIR__. '/views' => base_path('resources/views/neon')]);
         $this->publishes([__DIR__. '/Middleware' => base_path('app/Http/Middleware')]);
 
         $this->loadViewsFrom(__DIR__.'/views', 'neon');
