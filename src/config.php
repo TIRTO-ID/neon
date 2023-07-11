@@ -18,5 +18,7 @@ return [
     'users' => [
         'model' => App\Models\User::class,
     ],
+
+    'background-url' => "https://images.hdqwalls.com/download/long-exposure-aurora-night-f7-3840x2160.jpg", //background login
     
 ];

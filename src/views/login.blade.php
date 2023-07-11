@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link data-n-head="true" rel="shortcut icon" type="image/ico" href="https://cdn.tirto.id/tirto-front-end-msite-2017/phone/images/favicon.ico">
 
-  <title>{{ env('APP_NAME') }}</title>
+  <title>{{ config('app.name') }}</title>
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -165,7 +165,7 @@
     @endif
   
     <div class="title">
-      Indium
+      {{ config('app.name') }}
     </div>
 
     <div class="google-btn">

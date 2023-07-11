@@ -45,6 +45,7 @@ class NeonController extends Controller
         $data = $resp->json()['data'];
 
         $request->session()->put('neon_data', $data);
+        $request->session()->put('sess', $session);
 
         return $data;
         
