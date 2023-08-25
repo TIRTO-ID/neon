@@ -27,8 +27,8 @@ class NeonServiceProvider extends ServiceProvider
     public function boot()
     {
         $configPath = $this->app['path.config'] . DIRECTORY_SEPARATOR . 'neon.php';
-        $this->publishes([__DIR__ . '/config.php' => $configPath]);
-        $this->publishes([__DIR__. '/views' => base_path('resources/views/neon')]);
+        $this->publishes([__DIR__ . '/config.php' => config_path('neon.php')], 'neon-config');
+        $this->publishes([__DIR__. '/views' => resource_path('views/vendor/neon')]);
         $this->publishes([__DIR__. '/Middleware' => base_path('app/Http/Middleware')]);
 
         $this->loadViewsFrom(__DIR__.'/views', 'neon');
