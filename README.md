@@ -3,12 +3,23 @@
 
 simple package for authentication using neon project
 
+## installation & usag
+install : composer require tirtoid/neon
+publish component: php artisan vendor:publish --provider="Tirtoid\Neon\NeonServiceProvider"
+
+usage : 
+
+buat login controller dengan name "callback",
+di login controller pakai neon login
+use Tirtoid\Neon\Controllers\NeonController as Neon;
+$neon = new Neon;
+$data = $neon->login($request); // isinya respon dari neon
 
 ## URL Reference
 
 #### Login PATH
 
-```http
+```http 
   GET /neon/login
 ```
 #### Logout PATH
