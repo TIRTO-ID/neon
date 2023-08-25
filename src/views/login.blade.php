@@ -13,7 +13,7 @@
   <!-- Styles -->
   <style>
   html, body {
-      background: #FFF url("https://images.hdqwalls.com/download/long-exposure-aurora-night-f7-3840x2160.jpg") no-repeat fixed center;
+      background: #FFF url("{{ config('neon.background-url') }}") no-repeat fixed center;
       background-size: cover;
       color: #636b6f;
       font-family: 'Nunito', sans-serif;
