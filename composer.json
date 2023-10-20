@@ -3,7 +3,7 @@
     "description": "Neon Login Authenticator",
     "type": "library",
     "require": {
-        "php": "^7.4"
+        "php": "^7.2.5|^8.0",
     },
     "license": "MIT",
     "autoload": {
