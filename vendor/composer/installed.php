@@ -1,19 +1,19 @@
 <?php return array(
     'root' => array(
-        'name' => 'liulinnuha/neon',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => NULL,
+        'name' => 'tirtoid/neon',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'd1f872887528797734848119718d9b8b8f8865bc',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
         'dev' => true,
     ),
     'versions' => array(
-        'liulinnuha/neon' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+        'tirtoid/neon' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'd1f872887528797734848119718d9b8b8f8865bc',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
